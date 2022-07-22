@@ -12,7 +12,7 @@ import Header from "./Header/header"
 import Footer from "./Footer"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Layout = ({  children, currentPage }) => {
+const Layout = ({  children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,11 +27,11 @@ const Layout = ({  children, currentPage }) => {
 
   return (
     <>
-      <Header currentPage={currentPage} siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <main className={`page ${currentPage}`}>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <main >
           {children}
         </main>
-       <Footer currentPage={currentPage} />
+       <Footer  />
      
     </>
   )

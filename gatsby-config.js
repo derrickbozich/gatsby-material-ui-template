@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Sound of Ceres`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Brothertiger`,
+    description: `Luke Demo`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
